@@ -92,3 +92,18 @@ python3 -m pip install h5py --no-binary=h5py
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+
+## update for installation
+
+```
+conda create -n pulse
+conda activate pulse
+conda install -c conda-forge python=3.8
+## petsc and petsc4py versions should be = 3.16
+conda install -c conda-forge fenics=2019.1.0
+conda install -c conda-forge pulse
+conda install -c conda-forge superlu_dist=7
+python3 -m pip install cardiac-geometries
+```
+And: change mesh: str| Path = "" to mesh: Union[ str, Path] = "", with "from typing import Union"
