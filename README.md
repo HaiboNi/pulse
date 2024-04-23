@@ -107,3 +107,10 @@ conda install -c conda-forge superlu_dist=7
 python3 -m pip install cardiac-geometries
 ```
 And: change mesh: str| Path = "" to mesh: Union[ str, Path] = "", with "from typing import Union"
+
+## add h5py MPI support
+```
+pip uninstall h5py
+conda install -c conda-forge h5py=3.1.0=mpi_mpich_py38haad20fc_0
+#note this is an old version to accommodate other packages. 
+```
