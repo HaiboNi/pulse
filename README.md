@@ -100,6 +100,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 conda create -n pulse
 conda activate pulse
 conda install -c conda-forge python=3.8
+conda install -c conda-forge petsc=3.16
+conda install -c conda-forge petsc4py=3.16
+
 ## petsc and petsc4py versions should be = 3.16
 conda install -c conda-forge fenics=2019.1.0
 conda install -c conda-forge pulse
