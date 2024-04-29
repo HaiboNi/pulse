@@ -117,3 +117,10 @@ pip uninstall h5py
 conda install -c conda-forge h5py=3.1.0=mpi_mpich_py38haad20fc_0
 #note this is an old version to accommodate other packages. 
 ```
+
+## troubleshooting with MPI
+if ```mpirun -np 2 python problem2.py``` is too slow and CPUs are using > 100%:
+```
+#set openmp thread number:
+export OMP_NUM_THREADS=1
+```
